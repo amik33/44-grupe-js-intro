@@ -146,3 +146,5 @@ console.log(liek);
 
 liek %= 5;
 console.log(liek);
+
+console.log("-----------------------------------------------")

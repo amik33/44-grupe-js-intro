@@ -43,3 +43,5 @@ console.log(prisistatymas('Petras', 16));
 console.log(prisistatymas('Maryte', 160));
 console.log(prisistatymas('Jonas', 36));
 console.log(prisistatymas('Ona', 99));
+
+console.log("-----------------------------------------------")

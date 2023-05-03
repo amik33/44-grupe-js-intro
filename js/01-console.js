@@ -18,3 +18,5 @@ console.error(3, 4, 5);
 console.log(45)
 console.warn(3, 45, 85)
 console.error(25, 45, 45)
+
+console.log("-----------------------------------------------")
