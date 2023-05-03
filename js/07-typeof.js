@@ -16,7 +16,7 @@ console.log(c);
 const d = typeof false;
 console.log(d);
 
-console.log(`-----------------------------------------------------`)
+console.log(`-----------------------------------------------------`);
 
 function sum (a, b) {
     return a + b;
@@ -25,7 +25,7 @@ function sum (a, b) {
 const e = typeof sum;
 console.log(e);
 
-console.log(`------------------------------------------------------`)
+console.log(`------------------------------------------------------`);
 
 const f = typeof [];
 console.log(f);
@@ -36,7 +36,7 @@ console.log(g);
 const h = typeof undefined;
 console.log(h);
 
-console.log(`------------------------------------------------------`)
+console.log(`------------------------------------------------------`);
 
 function example () {
     return example;

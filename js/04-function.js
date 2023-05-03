@@ -13,7 +13,7 @@ console.log(s2);
 const s3 = sum(-9, -4);
 console.log(s3);
 
-console.log("-----------------------------------------------")
+console.log("-----------------------------------------------");
 
 function hi(name) {
     console.log(name);
@@ -44,4 +44,4 @@ console.log(prisistatymas('Maryte', 160));
 console.log(prisistatymas('Jonas', 36));
 console.log(prisistatymas('Ona', 99));
 
-console.log("-----------------------------------------------")
+console.log("-----------------------------------------------");

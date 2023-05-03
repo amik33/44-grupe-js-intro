@@ -113,4 +113,4 @@ const pavarde = 'Jonaitis';
 const personHi2 = `Hi, I am ${vardas} ${pavarde} and I like you!`;
 console.log(personHi2);
 
-console.log("-----------------------------------------------")
+console.log("-----------------------------------------------");

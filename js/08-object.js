@@ -21,7 +21,7 @@ console.log(s1);
 const s2 = `Sveiki, mano vardas ${maryte[0]} ir man ${maryte[1]} metu.`;
 console.log(s2);
 
-console.log(`--------------------------------------------------`)
+console.log(`--------------------------------------------------`);
 
 const jonas = {
     name: 'Jonas',
@@ -47,7 +47,7 @@ console.log(jonas['isMaried']);
 console.log(jonas['name']);
 console.log(jonas['age']);
 
-console.log(`-----------------------------------------------------`)
+console.log(`-----------------------------------------------------`);
 
 const random = {                                  
     tekstas: 'tekstas',
@@ -63,7 +63,7 @@ console.log(random['arTiesa']);
 console.log(random['kitas_variantas']); 
 console.log(random['su tarpu']); 
 
-console.log(`----------------------------------------------------`)
+console.log(`----------------------------------------------------`);
 
 const marks = [10, 2, 8, 4, 6];
 
@@ -73,7 +73,7 @@ console.log(marks[2]);
 console.log(marks[3]);
 console.log(marks[4]);
 
-console.log(`-----------------------------------------------------`)
+console.log(`-----------------------------------------------------`);
 
 const pazymiai = {
     0: 10,
@@ -89,7 +89,7 @@ console.log(pazymiai[2]);
 console.log(pazymiai[3]);
 console.log(pazymiai[4]);
 
-console.log(`-------------------------------------------------------`)
+console.log(`-------------------------------------------------------`);
 
 const student = {
     name: 'Bruce Lee',
@@ -127,14 +127,14 @@ console.log(student['age']);
 console.log(student['name']);
 console.log(student['movies']);
 
-console.log(`----------------------------------------------------------`)
+console.log(`----------------------------------------------------------`);
 
 console.log(student['age']);
 console.log(student.age);
 console.log(student['name']);
 console.log(student.name);
 
-console.log(`----------------------------------------------------------`)
+console.log(`----------------------------------------------------------`);
 
 console.log(student.movies.length);
 console.log(student.movies[0].title);
@@ -150,7 +150,7 @@ console.log(student.movies[0].actors[1]);
 console.log(student.movies[1].actors[0]);
 console.log(student.movies[2].actors[1]);
 
-console.log(`----------------------------------------------------------`)
+console.log(`----------------------------------------------------------`);
 
 const skaiciai = [10, 2, 8];
 console.log(skaiciai);
@@ -158,7 +158,7 @@ console.log(skaiciai);
 skaiciai[0] = 1000;
 console.log(skaiciai);
 
-console.log(`-----------------------------------------------------------`)
+console.log(`-----------------------------------------------------------`);
 
 const auto = {
     marke: 'audi',
