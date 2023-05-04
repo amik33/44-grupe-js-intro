@@ -3,9 +3,12 @@ console.clear();
 IF - palyginimas
 
 Palyginimo operatoriai:
-visi: >, <, >=, <=, ==, ===,
-naudotini: >, <, >=, <=, ===, 
-nenaudotini: ==,
+visi: >, <, >=, <=, ==, ===, !=, !==,
+naudotini: >, <, >=, <=, ===, !==,
+nenaudotini: ==, !=,
+
+Loginiai operatoriai:
+&& (and), || (or), ! (not),
 
 Kodo sablonai:
 if () {}
@@ -287,3 +290,238 @@ console.log(kokiaSavaitesDiena(8));
 
 console.log(`-----------------------------------------------------`);
 
+if (777 === 888) {
+    console.log('lygu');
+} else {
+    console.log('nelygu');
+}
+
+if (777 === 888) {
+    console.log('nelygu');
+} else {
+    console.log('lygu');
+}
+
+if (777 !== 888) {
+    console.log('nelygu');
+} else {
+    console.log('lygu');
+}
+
+if (777 === 777) {
+    console.log('nelygu');
+} else {
+    console.log('lygu');
+}
+
+if (777 !== 777) {
+    console.log('nelygu');
+} else {
+    console.log('lygu');
+}
+
+console.log(`------------------------------------------------------`);
+
+if ('labas' === 'labas') {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
+
+if ('Labas' === 'labas') {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
+
+if ('Labas' === 888) {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
+
+if ('888' === 888) {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
+
+if ('888' == 888) {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
+
+console.log(`----------------------------------------------------`);
+
+console.log('888' / 2);
+console.log('888' / '2');
+console.log('888' * '2');
+console.log('888' * 2);
+console.log('888 ' / 2);
+console.log('88,8' / 2);
+console.log('88.8' * 2);
+
+console.log(`----LOGINIAI OPERATORIAI-----------------------------------------------`);
+
+if (4 > 2) {
+    if (8 < 20) {
+        console.log('and1');
+    }
+}
+
+if (4 > 2 && 8 < 20) {
+    console.log('and2');
+}
+
+if (1 < 0 || 2 < 4) {
+    console.log('arba');
+}
+
+if (1 === 1 && 2 === 3 || 4 === 4) {
+    console.log('mix');
+}
+
+if (1 === 2 && 2 === 3 || 4 === 4) {
+    console.log('mix');
+}
+
+if (1 === 2 || 2 === 3 || 4 === 4) {
+    console.log('mix');
+}
+
+if (1 === 2 || 2 === 3 && 4 === 4) {  // neatvaizduoja terminale,
+    console.log('mix');               // nes netenkina salygos
+}
+
+if (1 === 1 && 2 === 2 || 3 === 4) {
+    console.log('mix');
+}
+
+if (0 === 0 || 2 === 8 && 4 === 4) {
+    console.log('mix');
+}
+
+// ((0 === 0 || 2 === 8) && 4 === 4) 
+// (( true || 2 === 8) && 4 === 4) 
+// (( true || false) && 4 === 4)
+//  true && 4 === 4
+//  true && true
+//  true
+
+console.log(`------------------------------------------------------`);
+
+const a = true;
+
+if (a) {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
+
+const b = false;
+
+if (b) {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
+
+const c = false;
+
+if (c) {
+    console.log('ne');
+} else {
+    console.log('taip');
+}
+
+const d = true;
+
+if (d) {
+    console.log('ne');
+} else {
+    console.log('taip');
+}
+
+const e = true;
+
+if (!e) {
+    console.log('ne');
+} else {
+    console.log('taip');
+}
+
+const f = false;
+
+if (!f) {
+    console.log('ne');
+} else {
+    console.log('taip');
+}
+
+console.log(`------------------------------------------------------`);
+
+const error = true;
+
+if (error) {
+    console.log('error');
+} else {
+    console.log('all good');
+}
+
+const error1 = false;
+
+if (error1) {
+    console.log('error');
+} else {
+    console.log('all good');
+}
+
+const error2 = true;
+
+if (!error2) {
+    console.log('all good');
+} else {
+    console.log('error');
+}
+
+const error3 = false;
+
+if (!error3) {
+    console.log('all good');
+} else {
+    console.log('error');
+}
+
+console.log(`---------------------------------------------------------`);
+
+// Visi skaiciai - TRUE, isskyrus 0 ir NaN
+// undifined - FALSE
+// null - FALSE
+// visi STRING - TRUE, isskirus tuscias ' '  'asdasd'
+// visos FUNCTION - TRUE (     ) {}
+// visi ARRAY - TRUE     (   []) {}
+// visi OBJECT - TRUE    (   {}) {}
+
+
+const nameImputValue = '';
+
+if (!nameImputValue) {
+    console.log('kazkas');
+} else {
+    console.log('neKazka');
+}
+
+const negative = !nameImputValue;
+console.log(negative);
+
+const nameImputValue1 = 'asdasd';
+
+if (!nameImputValue1) {
+    console.log('kazkas');
+} else {
+    console.log('neKazka');
+}
+
+const negative1 = !nameImputValue1;
+console.log(negative1);
