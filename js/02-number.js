@@ -14,7 +14,7 @@ MATEMATINIAI VEIKSMAI
 aritmetiniai operatoriai:
     +, -, /, *, ** (laipsnis), % (liekana)
 priskirimo operatoriai:
-=, +=, -=, /=, *=, **=, %=
+    =, +=, -=, /=, *=, **=, %=
 KINTAMŲJŲ INICIAVIMO BUDAI:
 - const (default) 
 - let (jei kinta reiksme)
@@ -148,3 +148,55 @@ liek %= 5;
 console.log(liek);
 
 console.log("-----------------------------------------------");
+
+let i = 0;
+console.log(i);
+
+i = i + 1;
+console.log(i);
+
+i += 1;
+console.log(i);
+
+i++;
+console.log(i);
+
+++i;
+console.log(i);
+
+let m = 0;
+console.log(m);
+
+m = m - 1;
+console.log(m);
+
+m -= 1;
+console.log(m);
+
+m--;
+console.log(m);
+
+--m;
+console.log(m);
+
+console.log(`-----------------------------------------------------------`);
+
+let n = 0;
+
+console.log(n);
+console.log(++n);
+console.log(++n);
+console.log(++n);
+console.log(++n);
+console.log(++n);
+
+console.log(`--------------------------------------------------------`);
+
+let b = 0;
+
+console.log(b);
+console.log(b++);   // Atkreipti demesi, skaiciuoja (antroje eiluteje)                    
+console.log(b++);   // pirma -b- kaip 0, tik tada prideda 1;
+console.log(b++);
+console.log(b++);
+console.log(b++);
