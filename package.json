@@ -4,6 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+
+    "kintamieji":"nodemon ./uzd/kintamieji.js",
+    "funkcijos":"nodemon ./uzd/funkcijos.js",
+    "uzd-4": "nodemon ./uzd/4-biggest.js",
+    "uzd-3": "nodemon ./uzd/3-number.js",
+    "uzd-2":"nodemon ./uzd/2-multiplay.js",
+    "uzd-1":"nodemon ./uzd/1-empty.js",
     "for":"nodemon ./js/12-for.js",
     "ternary":"nodemon ./js/11-ternary.js",
     "if":"nodemon ./js/10-if.js",
