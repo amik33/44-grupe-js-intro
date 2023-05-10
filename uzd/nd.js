@@ -2,9 +2,9 @@ console.clear();
 
 function raides(tekstas, kintamieji) {
     const funkcijos = {
-        'first': (tekstas) => tekstas[0],
-        'last': (tekstas) => tekstas[-1],
-        'mid': (tekstas) => tekstas[Math.round(tekstas.length/2)],
+        'first': (tekstas) => tekstas.at(0),
+        'last': (tekstas) => tekstas.at(-1,),
+        'mid': (tekstas) => tekstas[Math.round(tekstas.length/2)-1],
         'size': (tekstas) => tekstas.length,
         'lowercase': (tekstas) => tekstas.toLowerCase(),
         'uppercase': (tekstas) => tekstas.toUpperCase(),

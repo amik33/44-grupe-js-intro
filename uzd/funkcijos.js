@@ -75,62 +75,38 @@ console.log('----------------------------------------------------------');
 
 // Funkcija pavadinimu “isrinktiRaides”: priima du kintamuosius:
 // pirmasis nurodo tekstą, su kuriuo reikės atlikti užduotį
-// antrasis nurodo kas kelintą raidę išrinkti patikrinti, ar pirmasis
-// kintamasis yra teksto tipo: jei ne, išvedame pranešimą “Pirmasis kintamasis
-// yra netinkamo tipo.” priešingu atveju tęsiame darbą patikrinti, ar pirmasis
-// kintamasis yra ne tuščias tekstas ir ne didesnis nei 100 simbolių:
-// jei ne, išvedame pranešimą “Pirmojo kintamojo reikšmė yra netinkamo dydžio.”
-// priešingu atveju tęsiame darbą patikrinti, ar antrasis kintamasis yra
-// skaičiaus tipo: jei ne, išvedame pranešimą “Antrasis kintamasis yra
-// netinkamo tipo.” priešingu atveju tęsiame darbą patikriname, ar antrojo
-// kintamojo vertė yra didesnė už nulį: jei ne, išvedame pranešimą 
-// “Antrasis kintamasis turi būti didesnis už nulį.” priešingu atveju tęsiame
-// darbą patikriname, ar antrojo kintamojo vertė yra ne didesnė už pirmojo
-// kintamojo ilgį: jei ne, išvedame pranešimą “Antrasis kintamasis turi būti
-// ne didesnis už pateikto teksto ilgį.” priešingu atveju tęsiame darbą
-// išrenkame iš nurodyto teksto kas kelintą raidę (pagal antrojo kintamojo
-// žingsnį) išrinktas raides sudėti į atskirą kintamąjį, kuris yra teksto
-// tipo gražina rezultatą TESTAI:
-// console.log( isrinktiRaides( “abcdefg”, 2 ) ); rezultatas: “bdf”
-// console.log( isrinktiRaides( “abcdefghijkl”, 3 ) ); rezultatas: “cfil”
-// console.log( isrinktiRaides( “abc”, 0 ) ); rezultatas: “Antrasis kintamasis
-// turi būti didesnis už nulį.”
-// console.log( isrinktiRaides( “abc”, 4 ) ); rezultatas: “Antrasis kintamasis
-// turi būti ne didesnis už pateikto teksto ilgį.”
-// console.log( isrinktiRaides( 1561, 2 ) ); rezultatas: “Pirmasis kintamasis
-// yra netinkamo tipo.”
+// antrasis nurodo kas kelintą raidę išrinkti patikrinti
 
 function fillterLetters (zodis, kasKelintas) {
    if(typeof zodis !== 'string') {
-        return 'pirmas zodis netinkamas'
+        return 'Pirmasis kintamasis yra netinkamo tipo';
    }
    if (zodis.length > 100 || zodis.length === 0) {
-        return 'pirmojo reiksme netinkama'
+        return 'Pirmojo kintamojo reikšmė yra netinkamo dydžio';
    }
    if (typeof kasKelintas !== 'number' && kasKelintas > 0) {
-        return 'antras kintamasis netinkamas'
+        return 'Antrasis kintamasis yra netinkamo tipo';
    }
    if (kasKelintas <= 0){
-        return 'antras kintamasis turi buti didesnis uz nuli'
+        return 'Antrasis kintamasis turi būti didesnis už nulį'
    }
    if (zodis.length < kasKelintas){
-        return 'antras kintamasis turi buti ne didesnis uz teksto ilgi'
+        return 'Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį'
    }
-   let atsakimas='';
-   for (let i = kasKelintas - 1; i < zodis.length; i = i += kasKelintas) {
-    atsakimas += zodis[i];
+   let atsakymas= '';
+   for (let i = kasKelintas - 1; i < zodis.length; i = i + kasKelintas) {
+    atsakymas = atsakymas + zodis[i];
    }
-   console.log(atsakimas);
-  return `${zodis} ${kasKelintas}`;
+   console.log(atsakymas);
+
+  return atsakymas;
 }
 
 console.log(fillterLetters('bitukas', 2));
 
 console.log('bdf', `-->` , fillterLetters('abcdefg', 2));
-// console.log( isrinktiRaides( “abcdefghijkl”, 3 ) ); rezultatas: “cfil”
-// console.log( isrinktiRaides( “abc”, 0 ) ); rezultatas: “Antrasis kintamasis
-// turi būti didesnis už nulį.”
-// console.log( isrinktiRaides( “abc”, 4 ) ); rezultatas: “Antrasis kintamasis
-// turi būti ne didesnis už pateikto teksto ilgį.”
-// console.log( isrinktiRaides( 1561, 2 ) ); rezultatas: “Pirmasis kintamasis
-// yra netinkamo tipo.”
+console.log('cfil', `-->`, fillterLetters('abcdefghijkl', 3));
+console.log('Antrasis kintamasis turi būti didesnis už nulį.', `-->`,fillterLetters('abc', 0));
+console.log('Pirmasis kintamasis yra netinkamo tipo.', `-->`, fillterLetters( 1561, 2 ));
+console.log('Pirmojo kintamojo reikšmė yra netinkamo dydžio.', `-->`, fillterLetters('', 2 ));
+console.log('Antrasis kintamasis yra netinkamo tipo.', `-->`, fillterLetters('asdsadas', 'assa' ));
