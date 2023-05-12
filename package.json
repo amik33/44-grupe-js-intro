@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "uzd-5":"nodemon ./uzd/5-string.js",
     "nd":"nodemon ./uzd/nd.js",
     "arrow":"nodemon ./js/13-arrow.js",
     "kintamieji":"nodemon ./uzd/kintamieji.js",
