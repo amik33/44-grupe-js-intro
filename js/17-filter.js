@@ -21,7 +21,6 @@ for (const mark of marks) {
 
 console.log(validMarks);
 
-
 const filteredMarks = marks                 // 10
     .filter(m => m >= 1)                    // 7
     .filter(m => m <= 10)                   // 6
@@ -32,7 +31,7 @@ console.log(filteredMarks);
 const filteredMarks2 = marks.filter(m => m >= 1 && m <= 10 && m % 1 === 0);
 console.log(filteredMarks2);
 
-console.log('---------------');
+console.log('-----------------------------------------------------------------');
 const names = ['Petras', 'donatas', 'sANDRA', 'lAuRyNaS', 'SiMoNa', 'Maryte', 'Jonas', 'Ona'];
 const longNames = names
     .filter(n => n.length > 5)
