@@ -139,7 +139,7 @@ for (const key in user) {
 
 // O toliau: cikliski metodai :)
 
-// FOREACH
+// FOREACH - backende geriau nevartoti
 // MAP
 // SORT
 // FILTER

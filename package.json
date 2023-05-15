@@ -6,6 +6,9 @@
   "scripts": {
     "uzd-5":"nodemon ./uzd/5-string.js",
     "nd":"nodemon ./uzd/nd.js",
+    "filter":"nodemon ./js/17-filter.js",
+    "map":"nodemon ./js/16-map.js",
+    "foreach":"nodemon ./js/15-foreach.js",
     "loops":"nodemon ./js/14-loops.js",
     "arrow":"nodemon ./js/13-arrow.js",
     "kintamieji":"nodemon ./uzd/kintamieji.js",
