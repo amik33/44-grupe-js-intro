@@ -76,3 +76,4 @@ words[0] = 'AAA';
 
 console.log(words);
 console.log(letters);
+

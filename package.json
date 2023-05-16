@@ -6,6 +6,7 @@
   "scripts": {
     "uzd-5":"nodemon ./uzd/5-string.js",
     "nd":"nodemon ./uzd/nd.js",
+    "spread":"nodemon ./js/19-spread.js",
     "sort":"nodemon ./js/18-sort.js",
     "filter":"nodemon ./js/17-filter.js",
     "map":"nodemon ./js/16-map.js",
