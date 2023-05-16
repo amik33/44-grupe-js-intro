@@ -75,8 +75,6 @@ console.log('>>>', a, b);
 a = 777;
 console.log('>>>', a, b);
 
-console.clear();
-
 const words = ['labas', 'rytas', 'Lietuva', 'sakau', 'tau', 'siandien'];
 
 const first = words[0];
@@ -105,8 +103,6 @@ const [n1, n2, n3, n4, n5, ...likeN] = numbers;
 
 console.log(n1, n2, n3, n4, n5);
 console.log(likeN);
-
-console.clear();
 
 const car = {
     model: 'Audine',
@@ -144,22 +140,22 @@ const student1 = {
 
 const student2 = { ...student1 };
 
-// console.log(student1);
-// console.log(student2);
+console.log(student1);
+console.log(student2);
 
-// student1.name = 'Maryte';
-// student1.marks.push(4);
+student1.name = 'Maryte';
+student1.marks.push(4);
 
-// console.log(student1);
-// console.log(student2);
+console.log(student1);
+console.log(student2);
 
-// const student3 = { ...student1, color: '#f90' };
-// console.log(student1);
-// console.log(student3);
+const student3 = { ...student1, color: '#f90' };
+console.log(student1);
+console.log(student3);
 
-// const student4 = { ...student1, name: 'Maryte' };
-// console.log(student1);
-// console.log(student4);
+const student4 = { ...student1, name: 'Maryte' };
+console.log(student1);
+console.log(student4);
 
 const student5 = {
     ...student1,
@@ -177,4 +173,3 @@ student1.marks.push(4);
 console.log(student1);
 console.log(student5);
 
-// json
