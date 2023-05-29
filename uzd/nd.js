@@ -23,3 +23,55 @@ console.log(raides('labas', 'lowercase'));
 console.log(raides('labas', 'uppercase'));
 console.log(raides('labas', 'uppercaseCount'));
 console.log(raides('labas', 'lowercaseCount'));
+
+
+console.log('--------------------------------------------------');
+
+for (let i = 0; i < 3; i++) {
+    console.log('text')
+}
+
+console.log('-----------------------------------------------------');
+
+for (let i = 0; i < 3; i++) {
+    console.log('text')
+}
+ let i = 0; while (i < 3) {
+    console.log('text'); i++;
+}
+
+console.log("---------------------------------------------------");
+
+var x = 8;
+
+for (let i = 0; i < x; i++ ) {
+    console.log(i);
+}
+
+console.log('------------------------------------------------------');
+
+var x = 8;
+
+for (i = 0; i < x; i++) {
+    console.log("the number " + i + " is still smaller that " + x );
+
+}
+console.log('-----------------------------------------------------');
+
+var x = 8;
+
+for (i = 0; i < x; i+=2) {
+    console.log("the number " + i + " is still smaller that " + x );
+}
+
+console.log('-------------------------------------------------');
+
+var x = 100;
+
+for (i = 2; i < x; i+=5) {
+    console.log("the number " + i + " is still smaller that " + x );
+}
+
+
+
+
