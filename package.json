@@ -6,6 +6,7 @@
   "scripts": {
     "uzd-5":"nodemon ./uzd/5-string.js",
     "nd":"nodemon ./uzd/nd.js",
+    "interval":"nodemon ./js/23-interval.js",
     "random":"nodemon ./js/22-random.js",
     "recursion":"nodemon ./js/21-recursion.js",
     "json":"nodemon ./js/20-json.js",
