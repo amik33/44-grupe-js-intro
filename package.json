@@ -2,6 +2,7 @@
   "name": "44-grupe-js-intro",
   "version": "1.0.0",
   "description": "",
+  "type":"module",
   "main": "index.js",
   "scripts": {
     "uzd-5":"nodemon ./uzd/5-string.js",
