@@ -5,6 +5,7 @@
   "type":"module",
   "main": "index.js",
   "scripts": {
+    "nd-2":"nodemon ./uzd/nd-2.js",
     "nd":"nodemon ./uzd/nd.js",
     "uzd-8":"nodemon ./uzd/8-for.js",
     "uzd-7":"nodemon ./uzd/7-kintamieji.js",
